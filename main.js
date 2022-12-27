@@ -369,4 +369,6 @@
 // }
 
 
-let age=prompt('how old are you');
+// let age=prompt('how old are you');
+
+

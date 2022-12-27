@@ -275,7 +275,7 @@
 
 
 <!-- -------------vowels----------------- -->
-<html>
+<!-- <html>
     <body>
         <script>
             function vowel_count(str) 
@@ -287,7 +287,218 @@
             console.log(vowel_count('hello welcome abcde'));
         </script>
     </body>
+</html> -->
+
+<!-- --------------------------- -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function matrix(n)
+        {
+            for(let i=0;i<n;i++)
+            {
+                for(let j=0;j<n;j++)
+                {
+                    if(i==j)
+                    {
+                        console.log("1")    
+                    }
+                    else
+                    {
+                        console.log("0")
+                    }
+                }
+                console.log("------------")
+            }
+        }
+        // let n=prompt("enter number:")
+        // console.log("value of n:"+n)
+        matrix(4)
+    </script>
+</body>
 </html>
+ -->
+
+
+ <!-- --------------------------- -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        // let name='abc';
+
+        // function show() 
+        // {
+        //     name="riya"; 
+        //     let msg='hello ' +name;
+        //     console.log(msg)
+        // }
+        // console.log(name);
+        // show();
+        // console.log(name)
+
+
+        // --------------------
+
+        let name='abc';
+
+        function show() 
+        {
+            let name="riya"; 
+            let msg='hello ' +name;
+            console.log(msg)
+        }
+        console.log(name);
+        show();
+        console.log(name)
+    </script>
+ </body>
+ </html> -->
 
 
 
+ <!-- --------------------------- -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        function sum()
+        {
+            s=0
+            for(let i=0;i<arguments.length;i++)
+            {
+                s=s+arguments[i]
+            }
+            console.log("sum of arguments: "+s)
+        }
+        sum(1,2,3,4)
+        sum(3,7,1,9,5)
+        sum('a','b','c','d')
+    </script>
+ </body>
+ </html> -->
+
+
+
+ <!-- --------------------------- -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+
+        let f=()=>
+        {
+            console.log("hello world")
+        }
+        f()
+
+        // console.log('-------------')
+
+        // let a=(n1,n2)=>
+        // {
+        //     console.log("n1 + n2: ",n1+n2)
+        //     console.log("n1 - n2: ",n1-n2)
+        //     console.log("n1 * n2: ",n1*n2)
+        //     console.log("n1 / n2: ",n1/n2)
+        // }
+        // a(20,2)
+        // console.log('----------')
+        // a(23,5)
+
+
+
+    </script>
+ </body>
+ </html> -->
+
+
+
+ <!-- -------------------- -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+            function person() 
+            {
+                this.name='abc',
+                this.city='surat',
+                this.namef=function() 
+                {
+                    console.log(this.city);
+                    // function innerf()
+                    // {
+                    //     console.log(this.city)
+                    // }
+                    let innerf=()=> 
+                    {
+                        console.log(this.city);
+                    }
+                    innerf();
+                }
+            }
+            let f = new person();
+            f.namef();
+    </script>
+ </body>
+ </html> -->
+
+
+
+ <!-- -------------------- -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        // let a=function()
+        // {
+        //     console.log("hello")
+        // }
+        // a()
+
+        // let b=()=>
+        // {
+        //     console.log("welcome");
+        // }    
+        // b();
+
+        
+    </script>
+ </body>
+ </html>
