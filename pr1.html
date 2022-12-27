@@ -1,0 +1,1962 @@
+<!-- <html>
+<head><title></title></head>
+<body>
+    <script>
+        // a = 'JavaScript' 
+        // b = 10 
+        // function letsLearnScope() {
+        // console.log(a, b)
+        // if (true) {
+        //     console.log(a, b)
+        // }
+        // }
+        // console.log(a, b)
+
+
+        let a = 'JavaScript' 
+        let b = 10 
+        function letsLearnScope() {
+        console.log(a, b) 
+        if (true) {
+            let a = 'Python'
+            let b = 100
+            console.log(a, b) 
+        }
+        console.log(a, b)
+        }
+        letsLearnScope()
+        console.log(a, b) 
+    </script>
+</body>
+</html> -->
+
+
+<!------objects----------->
+<!-- <html>
+<head><title></title></head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+        document.getElementById('demo').innerHTML=person.firstName+' '+person.lastName+' is '+person['age']+' year old'
+    </script>
+</body>
+</html> -->
+
+
+<!-- <html>
+<head><title></title></head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let a = 'JavaScript' // is a global scope it will be found anywhere in this file
+        let b = 10 // is a global scope it will be found anywhere in this file
+        // Function scope
+        function letsLearnScope() {
+        console.log(a, b) // JavaScript 10, accessible
+        let value = false
+        // block scope
+        if (true) {
+            // we can access from the function and outside the function but 
+            // variables declared inside the if will not be accessed outside the if block
+            let a = 'Python'
+            let b = 20
+            let c = 30
+            let d = 40
+            value = !value
+            console.log(a, b, c, value) // Python 20 30 true
+        }
+        // we can not access c because c's scope is only the if block
+        console.log(a, b, value) // JavaScript 10 true
+        }
+        letsLearnScope()
+        console.log(a, b)
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>The best way to loop through an array is using a standard for loop:</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+let value=10;
+alert(typeof value);
+
+value=String(value);
+alert(typeof value);
+</script>
+
+</body>
+</html>-->
+
+
+
+<!-- ---------------------------
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+let person = {
+    firstName: 'John',
+    lastName: 'Doe'
+};
+
+function greet() {
+    console.log('Hello, World!');
+}
+
+person.greet = greet;
+
+person.greet();
+</script>
+
+</body>
+</html> -->
+
+
+<!-- --------------------------- -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+    function square() 
+    {
+        let num = 2
+        let sq = num * num
+        console.log(sq)
+    }
+
+    square() 
+
+    function addTwoNumbers() 
+    {
+        let numOne = 10
+        let numTwo = 20
+        let sum = numOne + numTwo
+
+        console.log(sum)
+    }
+
+    addTwoNumbers() 
+</script>
+
+</body>
+</html> -->
+
+
+
+<!----------------------------- -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+    function printFullName ()
+    {
+      let firstName = 'abc'
+      let lastName = 'def'
+      let space = ' '
+      let fullName = firstName + space + lastName
+      return fullName
+    }
+    console.log(printFullName())
+</script>
+
+</body>
+</html> -->
+
+
+
+<!----------------------------- -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+function areaOfCircle(r) 
+{
+  let area = Math.PI * r * r
+  return area
+}
+
+console.log(areaOfCircle(10)) 
+
+function square(number) 
+{
+  return number * number
+}
+
+console.log(square(10)) 
+</script>
+
+</body>
+</html> -->
+
+
+<!----------------------------- -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+function sumTwoNumbers(numOne, numTwo) {
+  let sum = numOne + numTwo
+  console.log(sum)
+}
+sumTwoNumbers(10, 20) 
+
+function sumTwoNumbers(numOne, numTwo) {
+  let sum = numOne + numTwo
+  return sum
+}
+
+console.log(sumTwoNumbers(10, 20))
+function printFullName(firstName, lastName) {
+  return `${firstName} ${lastName}`
+}
+console.log(printFullName('abc', 'def'))
+</script>
+
+</body>
+</html>-->
+
+
+
+<!----------------------------- -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+function sumArrayValues(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+  return sum;
+}
+const numbers = [1, 2, 3, 4, 5];
+    //calling a function
+console.log(sumArrayValues(numbers));
+
+
+    const areaOfCircle = (radius) => {
+      let area = Math.PI * radius * radius;
+      return area;
+    }
+console.log(areaOfCircle(10))
+</script>
+
+</body>
+</html> -->
+
+
+
+
+<!----------------------------- -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+const square=function sq(number)
+{
+    return number*number;
+}
+const x=square(3);
+console.log(x)
+</script>
+
+</body>
+</html> -->
+
+<!----------------------------- -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+// const arr=['a','b','c','d','e'];
+// console.log(arr[1])
+
+
+var myarray=new Array();
+myarray[120]='1';
+console.log(myarray.length);
+</script>
+
+</body>
+</html> -->
+
+
+
+<!----------------------------- -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function book(title,author)
+{
+    this.title=title;
+    this.author=author;
+}
+
+var mybook=new book('abc','def')
+
+document.write('book name is '+mybook.title+'<br>');
+document.write('author is '+mybook.author+'<br>');
+
+</script>
+
+</body>
+</html> -->
+
+
+<!-- ---------------------------------------------- -->
+<!-- <html>
+<body>
+   <h2>Using the <i>Constructor Property</i> of Boolean object in JavaScript</h2>
+   <button onclick="myFunc()">Run</button>
+   <div
+      id="root"
+      style=" background-color: rgb(232, 232, 232); border: 1px solid gray; margin: 5px 0px; padding: 10px; ">
+   </div>
+   <script>
+
+      const root = document.getElementById('root')
+
+      const values = [1, 0, "'abc'", undefined, NaN]
+      root.innerHTML =
+      'The below are the values that will use in the Boolean object constructor: <br/><br/>'
+      values.map((value) => (root.innerHTML += value + '<br/><br/>'))
+
+      function myFunc() {
+         let str ='After Boolean object is created using the constructor: <br/><br/>'
+         values.map((value) => {
+            const booleanObject = new Boolean(value)
+            str += value + ' = ' + booleanObject + '<br/><br/>'
+         }) 
+         root.innerHTML = str
+      }
+   </script>
+</body>
+</html> -->
+
+
+
+<!-- --------------------------------------------------->
+<!-- <html>
+<head>
+</head>
+<body>
+<script>
+    (function(n) {
+    console.log(n * n)
+    })(2) // 4, but instead of just printing if we want to return and store the data, we do as shown below
+
+    let squaredNum = (function(n) {
+    return n * n
+    })(10)
+
+    console.log(squaredNum)
+</script>
+</body>
+</html>
+ -->
+
+
+
+<!-- --------------------------------------------------->
+<!-- <html>
+    <head>
+    </head>
+    <body>
+    <script>
+        function square(n) {
+        return n * n
+        }
+
+        console.log(square(2)) // 4
+
+        // const square = n => {
+        // return n * n
+        // }
+    </script>
+    </body>
+    </html> -->
+
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+<body>
+    <script>
+       const callback=(n)=>
+       {
+        return n**2
+       } 
+       function cube(callback,n)
+       {
+        return callback(n)*n
+       }
+       console.log(cube(callback,2))
+    </script>
+</body>
+</html>
+
+
+<html>
+<body>
+    function myfunction(a,b)
+    {
+        return a*b;
+    }
+    myfunction(10,2)
+</body>    
+</html> -->
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+<body>
+    <script>
+     const letter=(['a','b','c']);
+     console.log(letter.length);
+     const letters=new Set();
+     letters.add('d');
+     letters.add('e');
+     console.log(letters.size);
+     console.log(letters.clear());
+     console.log(letters.size);
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- ---------------------------------------------- -->
+<!-- <html>
+<body>
+    <script>
+        const letters=new Set();
+        letters.add('a');
+        letters.add('b');
+        letters.add('c');
+        console.log(letters.size);
+        letters.forEach(function(letter)
+        {
+            console.log(letter);
+        });
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- ------------------------------------------------- -->
+<!-- <html>
+<body>
+<script>
+    const letters=new Set();
+    letters.add('a');
+    letters.add('b');
+    letters.add('c');
+    console.log(letters.size);
+    console.log(letters.values());
+    console.log(letters.keys());
+</script>
+</body>
+</html> -->
+
+
+<!-- ------------------------------------------------ -->
+<!-- <html>
+<body>
+    <script>
+        const letters=new Set(['a','b','c']);
+        const iter=letters.entries();
+        for(const e of iter)
+        {
+            console.log(e);
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- ------------------------------------------------------ -->
+<!-- <html>
+    <body>
+        <script>
+            // a=[12,15,"arr",15];
+            // console.log(a[2]);
+            let compare=(a,b)=>
+            {
+                return b-a;
+            }
+            let num =[500,21,5,1,76,41,12,4,43];
+            console.log(num)
+            // console.log(num.sort())
+            // num.sort(compare)
+            // console.log(num)
+            console.log(num.reverse());
+
+       </script>
+    </body>
+</html> -->
+
+
+
+<!-- -------------map,reduce,filter------------------ -->
+<!-- <html>
+    <body>
+        <script>
+            // let arr=[45,3,21];
+            // let a =arr.map((value,index,array)=>
+            // {
+            //     console.log(value,index,array)
+            //     return value+index
+
+            // })
+            // console.log(a)
+
+            // let arr2=[45,2,4,21,34,12]
+            // let a2=arr2.filter((a)=>
+            // {
+            //     return a<20;
+            // })
+            // console.log(a2)
+
+
+            let arr3=[2,1,3,4,5,2,1]
+            let a3=arr3.reduce((h1,h2)=>
+            {
+                return h1+h2
+            })
+            console.log(a3)
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            // alert('enter value of a')
+            // let a=prompt('enter here:')
+            // alert(typeof a)
+            // a=parseInt(a)
+            // alert(typeof a)
+            // document.write(a)
+
+            window.console.log(window)
+            console.log(document.body)
+            document.body.style.background='yellow'
+        </script>
+    </body>
+</html>-->
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+        //    const person=
+        //    {
+        //     firstname:"abc",
+        //     lastname:"xyz",
+        //     age:22,
+        //     city:"surat"
+        //    }
+        //    const{firstname=first,age,city="paris"}=person;
+        //    console.log(age)
+        //    console.log(firstname)
+        //    console.log(first)
+        //    console.log(city)
+           
+
+        //    let a,b;
+        //    [a,b]=[32,12];
+        //    console.log(a,b);
+        //    [a,b,c,...d]=[12,13,1,2,3,4,5,6,7];
+        //    console.log(a)
+        //    console.log(b)
+        //    console.log(c)
+        //    console.log(d)
+        //   ({a,b,c,...d}={a:34,b:35,c:36,d:37,e:38})
+        //   console.log(a,b,c,d)
+
+            //  const fruits=['apple','bananas','mangoes'];
+            //  console.log(fruits);
+            //  [a,b,c]=fruits;
+            //  console.log(a)
+            //  console.log(b)
+            //  console.log(c)
+
+
+            const laptop={
+                model:"hp pavalion",
+                age:"23 days",
+                gender:"male",
+                net:1233,
+                start:function(){console.log('started')}
+            }
+            const {model, age,gender,net,start}=laptop;
+            console.log(model,age,gender,net,start);
+            start()
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+        //    const regex=/hello/g
+        //    const text="abc hello def ghi hello world hello"
+        //    console.log(text.replace(regex,'HI')
+            let reg=/Hello/;
+            reg=/Hello/g;
+            reg=/Hello/i; 
+
+            // console.log(reg)
+            // console.log(reg.source)
+
+            let s="hi hello abc def hello asdf wrold Hello"
+            let result=reg.exec(s)
+            // console.log(result)
+            // result=reg.exec(s)
+            // console.log(result)
+            // result=reg.exec(s)
+            // console.log(result)
+            // result=reg.exec(s)
+            // console.log(result)
+            // resul +-t=reg.exec(s)
+            // console.log(result)
+            
+            
+            // console.log(result)
+            // console.log(result.input);
+            // console.log(result.index)
+
+
+            // let result1=reg.test(s)
+            // console.log(result1)
+
+
+            // let result2=s.match(reg)
+            // console.log(result2)
+
+            // let result3=s.replace(reg,"HIIIIIIIIII")
+            // console.log(result3)
+
+            let url=''
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ----------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            const numbers = [1, 2, 3, 4]
+
+            const numbers_with_spread = [...numbers, 5, 6]
+
+            const numbers_without_spread = [numbers, 5, 6]
+
+            console.log(numbers_with_spread)
+
+            console.log(numbers_without_spread)
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            const human = 
+            {
+                name : "Kedar"
+            }
+
+            const human_age_with_spread = 
+            {
+                ...human,
+                age : '24'
+            }
+
+            const human_age_without_spread = 
+            {
+                human,
+                age : '24'
+            }
+
+            console.log(human_age_with_spread)
+            console.log(human_age_without_spread)
+        </script>
+    </body>
+</html> -->
+
+
+
+<!-- ----------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            // window.console.error('you made a mistake');
+            // console.error('console error')
+            // console.assert(document.getElementById("demo"), "You have no element with ID 'demo'");
+            // let x = 5;
+            // let y = 5;
+            // const myArr = ["Orange", "Banana", "Mango", "Kiwi" ];
+            // console.assert(x + y = 11, myArr);
+            // console.log('hello');
+            // console.clear();
+            // for (let i = 0; i < 5; i++) 
+            // {
+            //    console.count();
+            // }
+            // for (let i = 0; i < 5; i++) 
+            // {
+            //     console.count("myLabel");
+            // }
+            // console.log('hello world');
+            // console.group();
+            // console.log('hello world2');
+            // console.log("Hello world!");
+            // console.groupCollapsed();
+            // console.log("Hello again, this time inside a collapsed group!");
+            // console.log('hello');
+            // console.log('hi');
+            // console.log("Hello world!");
+            // console.group();
+            // console.log("Hello again, this time inside a group!");
+            // console.groupEnd();
+            // console.log("and we are back.")
+            // console.info("Hello world!");
+            const car1 = {name:"Audi", model:"A4"}
+            const car2 = {name:"Volvo", model:"XC90"}
+            const car3 = {name:"Ford", model:"Fusion"}
+
+            console.table([car1, car2, car3], ["model"]);
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+   <head>      
+    <script type = "text/javascript">
+        
+           function myFunc() {
+              var a = 100;
+              
+              try {
+                 alert("Value of variable a is : " + a );
+              }
+              catch ( e ) {
+                 alert("Error: " + e.description );
+              }
+              finally {
+                 alert("Finally block will always execute!" );
+              }
+           }
+        
+     </script>   
+   </head>
+   
+   <body>
+      <p>Click the following to see the result:</p>
+      
+      <form>
+         <input type = "button" value = "Click Me" onclick = "myFunc();" />
+      </form>      
+   </body>
+</html> -->
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            function person()
+            {
+                this.name='abc',
+                this.age=22
+            } 
+            const p=new person()
+            console.log(p.name)
+            console.log(p.age)
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            class Person 
+            {
+                constructor(name) 
+                {
+                    this.name = name;
+                }
+
+                greet() 
+                {
+                    console.log(`Hello ${this.name}`);
+                }
+            }
+
+        let person1 = new Person('John');
+
+        console.log(person1.name); 
+
+        person1.greet(); 
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            class Person{
+                constructor(name)
+                {
+                    this.name=name;
+                }
+                get pname()
+                {
+                    return this.name;
+                }
+                set pname(x)
+                {
+                    this.name=x;
+                }
+            }
+            let p=new Person('abc')
+            console.log(p.pname);
+            p.pname='riya'
+            console.log(p.pname);
+
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+
+        const p = new Person(); 
+
+        class Person 
+        {
+            constructor(name) 
+            {
+                this.name = name;
+            }
+        }
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            class Person 
+            {
+                constructor() 
+                {
+                    a = 0;
+                    this.name = a;
+                }
+            }
+
+            let p = new Person();
+        </script>
+    </body>
+</html> -->
+
+
+<!-- !-- ------------------------------------- --> -->
+<!-- <html>
+    <body>
+        <script>
+           
+                function Person(name) 
+                {
+                    this.name = name;
+                }
+                Person.prototype.getname=function()
+                {
+                    return this.name;
+                }
+            
+            let p = new Person('abc');
+            console.log(p);
+            console.log(p.getname())
+        </script>
+    </body>
+</html> -->
+
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            // var y='outer y';
+            // class staticlcass
+            // {
+            //     static field='abc';
+            //     static
+            //     {
+            //         var y=this.field;
+            //     }
+            // }
+            // console.log(y);
+
+
+            // class MyClass 
+            // {
+            //     static field1 = console.log('field1 called');
+            //     static 
+            //     {
+            //         console.log('Class static block #1 called');
+            //     }
+            //     static field2 = console.log('field2 called');
+            //     static 
+            //     {
+            //         console.log('Class static block #2 called');
+            //     }
+            // }
+
+            class a
+            {
+                // constructor(name)
+                // {
+                //     this.name=name;
+                // }
+                static hello()
+                {
+                    return "hello";
+                }
+
+            }
+
+            // let aclass=new a('abc');
+            let ac=new a();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+            console.log(ac.hello());
+                
+        </script>
+    </body>
+</html> -->
+
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            class Person 
+            {
+                constructor
+                (
+                    firstName = 'Asabeneh',
+                    lastName = 'Yetayeh',
+                    age = 250,
+                    country = 'Finland',
+                    city = 'Helsinki'
+                ) {
+                    this.firstName = firstName
+                    this.lastName = lastName
+                    this.age = age
+                    this.country = country
+                    this.city = city
+                }
+            }
+
+            const person1 = new Person()
+            const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
+
+            console.log(person1)
+            console.log(person2)
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            class Person 
+            {
+                constructor(firstName, lastName, age, country, city) 
+                {
+                    this.firstName = firstName
+                    this.lastName = lastName
+                    this.age = age
+                    this.country = country
+                    this.city = city
+                }
+                getFullName() 
+                {
+                    const fullName = this.firstName + ' ' + this.lastName
+                    return fullName
+                }
+            }
+
+            const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
+            const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
+
+            console.log(person1.getFullName())
+            console.log(person2.getFullName())
+        </script>
+    </body>
+</html> -->
+
+
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            class Person 
+            {
+                constructor(firstName, lastName, age, country, city) 
+                {
+                    this.firstName = firstName
+                    this.lastName = lastName
+                    this.age = age
+                    this.country = country
+                    this.city = city
+                    this.score = 0
+                    this.skills = []
+                }
+                getFullName() 
+                {
+                    const fullName = this.firstName + ' ' + this.lastName
+                    return fullName
+                }
+            }
+
+            const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
+            const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
+
+            console.log(person1.score)
+            console.log(person2.score)
+
+            console.log(person1.skills)
+            console.log(person2.skills)
+        </script>
+    </body>
+</html> -->
+
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+
+        class Person 
+        {
+            constructor(firstName, lastName, age, country, city) 
+            {
+                this.firstName = firstName
+                this.lastName = lastName
+                this.age = age
+                this.country = country
+                this.city = city
+                this.score = 0
+                this.skills = []
+            }
+            getFullName() 
+            {
+                const fullName = this.firstName + ' ' + this.lastName
+                return fullName
+            }
+            get getScore() 
+            {
+                return this.score
+            }
+            get getSkills() 
+            {
+                return this.skills
+            }
+            set setScore(score) 
+            {
+                this.score += score
+            }
+            set setSkill(skill) 
+            {
+                this.skills.push(skill)
+            }
+            getPersonInfo() 
+            {
+                let fullName = this.getFullName()
+                let skills =this.skills.length > 0 && this.skills.slice(0, this.skills.length - 1).join(', ') +` and ${this.skills[this.skills.length - 1]}`
+
+                let formattedSkills = skills ? `He knows ${skills}` : ''
+
+                let info = `${fullName} is ${this.age}. He lives ${this.city}, ${this.country}. ${formattedSkills}`
+                return info
+            }
+            static favoriteSkill() 
+            {
+                const skills = ['HTML', 'CSS', 'JS', 'React', 'Python', 'Node']
+                const index = Math.floor(Math.random() * skills.length)
+                return skills[index]
+            }
+            static showDateTime() 
+            {
+                let now = new Date()
+                let year = now.getFullYear()
+                let month = now.getMonth() + 1
+                let date = now.getDate()
+                let hours = now.getHours()
+                let minutes = now.getMinutes()
+                if (hours < 10) {
+                hours = '0' + hours
+                }
+                if (minutes < 10) {
+                minutes = '0' + minutes
+                }
+
+                let dateMonthYear = date + '.' + month + '.' + year
+                let time = hours + ':' + minutes
+                let fullTime = dateMonthYear + ' ' + time
+                return fullTime
+            }
+        }
+
+        console.log(Person.favoriteSkill())
+        console.log(Person.showDateTime())
+
+        </script>
+    </body>
+</html> -->
+
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            class staticproperty
+            {
+                // static helloEmail = "hello@company.com";
+
+                static staticmethod()
+                {
+                    console.log('hmmmmmmmmmmmm');
+                }
+                static staticMethod1()
+                {
+                    return "hello";
+                }
+                greet()
+                {
+                    console.log(staticproperty.staticmethod());
+                    console.log(staticproperty.staticMethod1());
+                }
+            }
+            let s=new staticproperty();
+            s.greet();
+
+            // class User {
+
+            // static helloEmail = "hello@company.com";
+
+            // static welcomeMessage() {
+            //     return "Welcome to our team!";
+            // }
+
+            // greet() {
+            //     console.log(User.helloEmail);
+            //     console.log(User.welcomeMessage());
+            // }
+
+            // }
+            // let user1 = new User();
+            // user1.greet();
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            class aclass
+            {
+                constructor(x,y)
+                {
+                    this.x=x;
+                    this.y=y;
+                }
+                suma()
+                {
+                    return this.x+this.y;
+                    
+                }
+            }
+            class bclass extends aclass
+            {
+                constructor(x,y,z)
+                {   
+                    super(x,y)
+                    this.z=z
+                }
+                sumb()
+                {
+                    // return this.suma+this.z;
+                    let t=super.suma()+this.z
+                    console.log(t)
+                    
+                }
+            }
+            let b=new bclass(1,2,3)
+            b.sumb();
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            class aclass
+            {
+                constructor(name)
+                {
+                    this.name=name;
+                }
+                greet()
+                {
+                    console.log('hello'+this.name);
+                }
+            }
+            class bclass extends aclass
+            {
+                constructor(name,gr)
+                {
+                    super(name)
+                    this.gr=gr
+                    
+                }
+                greet()
+                {
+                    super.greet();
+                    // let g=this.gr+' '+this.name;
+                    // console.log(g);
+                    // return this.greetings+' '+super.name;
+                }
+            }
+            let b=new bclass("riya",'happy birthday');
+            b.greet();
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            let text = '{"employees":[' +
+            '{"firstName":"John","lastName":"Doe" },' +
+            '{"firstName":"Anna","lastName":"Smith" },' +
+            '{"firstName":"Peter","lastName":"Jones" }]}';
+
+            const obj = JSON.parse(text);
+            console.log(obj.employees[1].firstName);
+            
+       </script>
+    </body>
+</html> -->
+
+
+
+<!-- ------------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            const usersText = `{
+            "users":[
+            {
+                "firstName":"Asabeneh",
+                "lastName":"Yetayeh",
+                "age":250,
+                "email":"asab@asb.com"
+            },
+            {
+                "firstName":"Alex",
+                "lastName":"James",
+                "age":25,
+                "email":"alex@alex.com"
+            },
+            {
+            "firstName":"Lidiya",
+            "lastName":"Tekle",
+            "age":28,
+            "email":"lidiya@lidiya.com"
+            }
+            ]
+            }`
+
+            const usersObj = JSON.parse(usersText, (key, value) => {
+            let newValue =
+                typeof value == 'string' && key != 'email' ? value.toUpperCase() : value
+            return newValue
+            })
+            console.log(usersObj)
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ----------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            // if( sessionStorage.hits ) 
+            // {
+            //     sessionStorage.hits = Number(sessionStorage.hits) +1;
+            // } 
+            // else 
+            // {
+            //     sessionStorage.hits = 1;
+            // }
+            // document.write("Total Hits :" + sessionStorage.hits );
+
+
+
+
+            localStorage.clear();
+
+            if( localStorage.hits ) 
+            {
+                localStorage.hits = Number(localStorage.hits) +1;
+            } 
+            else 
+            {
+                localStorage.hits = 1;
+            }
+            document.write("Total Hits :" + localStorage.hits );
+			
+        </script>
+    </body>
+</html> -->
+
+<!-- ----------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            let key=prompt('enter key:')
+            let value=prompt('enter value:')
+
+            localStorage.setItem(key,value)
+            let v=localStorage.getItem(key)
+            console.log(v)
+
+            
+            if(key=='name'|| value=='riya')
+            {
+                // localStorage.removeItem(key)
+            }
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ---------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            let key=prompt('enter key:')
+            let value=prompt('enter value:')
+
+            sessionStorage.setItem(key,value)
+            let v=sessionStorage.getItem(key)
+            console.log(v)
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ---------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            // for(let i=0; i<localStorage.length; i++) 
+            // {
+            //     let key = localStorage.key(i);
+            //     alert(`${key}: ${localStorage.getItem(key)}`);
+            // }
+
+
+            // let keys = Object.keys(localStorage);
+            // for(let key of keys) 
+            // {
+            //     alert(`${key}: ${localStorage.getItem(key)}`);
+            // }
+
+
+            localStorage.user = {name: "John"};
+            alert(localStorage.user);  
+            
+            localStorage.user=JSON.stringify({name:'abc'});
+
+            let user = JSON.parse( localStorage.user );
+            alert( user.name ); 
+            alert( JSON.stringify(localStorage, null, 2) );
+
+
+            if(typeof(Storage)!="undefined")
+            {
+                localStorage.clear();
+            }
+        </script>
+    </body>
+</html> -->
+
+
+
+<!-- ---------------------------------- -->
+<!-- <html>
+    <body>
+     hello world
+     <script>
+            // let promise=new Promise(function(resolve,reject){
+            //     alert('hello')
+            //     resolve(56)
+            // })
+            // console.log('hello');
+            // setTimeout(function()
+            // {
+            //     console.log('hello')
+            // },1000)
+            // console.log('my name is '+'abc')
+            // console.log(promise)
+
+
+            // console.log('start');
+            // setTimeout(function(){
+            //     console.log('hello');
+            // },900)
+            // console.log('end');
+       
+            
+            function loadScript(src,callback)
+            {
+                var script=document.createElement('script');
+                script.src=src;
+                script.onload=function()
+                {
+                    console.log('script loaded'+src)
+                    callback(src);
+                }
+                script.onerror=function()
+                {
+                    console.log('error loading script with src'+src);
+                    callback(new Error('src got some error'))
+                }
+                document.body.appendChild(script);
+            }
+            
+            function hello(error,src)
+            {
+                if(error)
+                {
+                    console.log(error)
+                    return
+                }
+                alert('helloooo'+src);
+            }
+            function gm(src)
+            {
+                alert('gm',src);
+            }
+            loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js",hello);
+        </script>
+
+    </body>
+</html> -->
+
+<!-- ---------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+        const url = 'https://restcountries.com/v2/all'
+        fetch(url)
+        .then(response => response.json()) 
+        .then(data => {
+            // getting the data
+            console.log(data)
+        })
+        .catch(error => console.error(error))
+        </script>
+    </body>
+</html> -->
+
+<!-- ---------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            let p=fetch("https://goweather.herokuapp.com/weather/surat")
+            p.then((value1)=>{
+                console.log(value1.status)
+                console.log(value1.ok)
+                return value1.json()
+            }).then((value2)=>{
+                console.log(value2)
+            })
+        </scrip>
+    </body>
+</html> -->
+
+<!-- ---------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            const square = async function (n) 
+            {
+                return n * n
+            }
+
+            console.log(square(2))
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ---------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            async function f1()
+            {
+                return 5
+            }
+            f1().then((x)=>
+            {
+                alert(x)
+            })
+
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ---------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            
+            async function f1()
+            {
+                let p1=new Promise((resolve,reject)=>{
+                        setTimeout(()=>{
+                            resolve("27 Deg")
+                        },1000)
+                })
+                let p2=new Promise((resolve,reject)=>{
+                        setTimeout(()=>{
+                            resolve("21 Deg")
+                        },7000)
+                })
+                // p1.then(alert)
+                // p2.then(alert)
+                console.log("fetching delhi weather.....")
+                let pr1=await p1
+                console.log("fetched delhi weather: "+pr1)
+                console.log("fetching surat weather......")
+                let pr2=await p2
+                console.log("fetched surat weather: "+pr2)
+                return [pr1,pr2]
+            }
+            const f2=()=>
+            {
+                console.log('2nd function....')
+            }
+            const main=async ()=>
+            {
+                console.log("welcome")
+                let a=await f1()
+                let b=await f2()
+
+                // a.then((value)=>
+                // {
+                //     console.log(value)
+                // })
+            }  
+            main() 
+        </script>
+    </body>
+</html>
+ -->
+
+
+<!-- ---------------------------------- -->
+<!-- <!DOCTYPE html>
+    <body>
+
+     <p class='title' id='first'>First </p>
+     <p class='title' id='second'>Second</p>
+     <p class='title' id='third'>Third</p>
+    
+     <script>
+        console.log(document.getElementsByTagName('p'))
+        console.log(document.getElementById('first'))
+        document.getElementById('second').innerHTML="changed value"
+        
+     </script>
+
+    </body>
+  </html> -->
+
+
+
+<!-- ---------------------------------- -->
+<!-- <html>
+<body>
+
+    <script>
+        function printvalue()
+        {  
+            var name=document.form1.name.value;  
+            alert("Welcome: "+name);  
+        }  
+    </script>
+
+    <form name="form1">  
+        Enter Name:<input type="text" name="name"/>  
+        <input id="input1" type="button" onclick="printvalue()" value="print name"/>  
+    </form>  
+</body>
+</html> -->
+
+
+<!-- ---------------------------------- -->
+<!-- <html>
+<body>
+   
+    <p id="intro1">lisa </p>
+    <p id="intro2">abc</p>
+    <p id="demo1"> </p>
+    <p id="demo2"></p>
+     
+    <script>
+        const e1 = document.getElementById("intro1");
+        document.getElementById("demo1").innerHTML ="hi this is..: " + e1.innerHTML;
+        const e2 = document.getElementById("intro2");
+        document.getElementById("demo2").innerHTML ="hi this is..: " + e2.innerHTML;
+    </script>
+    
+</body>
+</html> -->
+
+<!-- ---------------------------------- -->
+<!-- <html>
+    <body>
+        <h1 id="i1">hello</h1>
+        <h1 id="i2">welcome</h1>
+        <h1 id="i3">demo</h1>
+        <script>
+            let el = document.getElementById('i1')
+            console.log(el)
+
+            let el1=document.querySelector('h1')
+            console.log(el1)
+
+            let el2=document.querySelector('#i1')
+            console.log(el2)
+
+            let el3=document.querySelectorAll('h1')
+            console.log(el3)
+
+            
+        </script>
+    </body>
+</html> -->
+
+
+
+<!-- ---------------------------------- -->
+<!-- <html>
+    <body>
+        <style>
+        .s {
+            color: green;
+        }
+        </style>
+        
+        <body>
+            <h1 id="m1">hello</h1>
+            
+            <button onclick="f1()">click here</button>
+            
+            <script>
+                function f1() 
+                {
+                    document.getElementById("m1").setAttribute("class", "s"); 
+                }
+            </script>   
+    </body>
+</html>
+ -->
+
+<!-- ---------------------------------- -->
+<!-- <html>
+    <body>
+        <h1 id="m1" class="demo">welcome</h1>
+        <p id="m2"></p>
+
+        <script>
+            const element = document.getElementById("m1"); 
+            let text = element.getAttribute("class"); 
+            document.getElementById("m2").innerHTML = text;
+        </script>
+
+    </body>
+</html> -->
+
+
+<!-- ---------------------------------- -->
+<!-- <html>
+    <body>
+        <style>
+            .demo {
+              color: green;
+            }
+        </style>
+ 
+        <h1 id='i1' class="demo">helloooo</h1>
+        <button onclick="myFunction()">remove attr</button>
+        
+        <script>
+            function myFunction() 
+            {
+                document.getElementById("i1").removeAttribute("class"); 
+            }
+        </script>
+            
+    </body>
+</html> -->
+
+<!-- ---------------------------------- -->
+<!-- <html>
+    <body>
+
+        <button id="btn" onclick="f1()">btn</button>
+        <p id="d1"></p>
+
+        <script>
+            function f1()
+            {}
+            const e1 = document.getElementById("btn");
+            let ha = e1.hasAttribute("onclick");
+            // console.log(ha)
+            console.log(ha)
+        </script>
+
+
+    </body>
+</html> -->
+
+
+
+<!-- ---------------------------------- -->
+<!-- <html>
+    <body>
+        <h1 class="d1">hello</h1>
+        <p id="d2"></p>
+
+        <script>
+            const element = document.getElementsByTagName("H1")[0];
+            const attr = element.getAttributeNode("class");
+            document.getElementById("d2").innerHTML = attr.value;
+        </script>
+    </body>
+</html>
+ -->
+
+<!-- ----------------------------- -->
+<!-- <html>
+<style>
+    .d1 {
+        color: green;
+    }
+    </style>
+        
+    <body>
+        <h1>Demo</h1>
+        <button onclick="f1()">Change</button>
+
+        <script>
+            function f1() {
+            const attr = document.createAttribute("class");
+            attr.value = "d1";
+            const element = document.getElementsByTagName("h1")[0];
+            element.setAttributeNode(attr); 
+            }
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ---------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            let title = document.createElement('h1')
+            title.className = 'title'
+            title.style.fontSize = '20px'
+            title.textContent = 'Demo'
+        
+            console.log(title)
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ---------------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            let message="good global"
+            function hello1()
+            {
+               
+                let message="good morning"
+                // {
+                //     let message="good afternoon"
+                    console.log("hello 1",message)
+                // } 
+                let c=function hello2()
+                {
+                    console.log("it's hello2 "+message)
+                }
+                return c
+            }
+            c=hello1()
+            c()
+
+           
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ----------------------------- -->
+<!-- <html>
+    <body>
+        <script>
+            function init() 
+            {
+                var name = 'Mozilla'; 
+                function displayName() 
+                {
+                    console.log(name); 
+                }
+                name="harry"
+                return displayName();
+            }
+            let c=init();
+            c()
+
+        </script>
+    </body>
+</html> -->
+
+
+<!-- ----------------------------- -->
+<html>
+    <body>
+        <script>
+         function returnfunction()
+         {    
+            const x=()=>
+            {
+                let a=1
+                console.log(a)
+                const y=()=>
+                {
+                    // let a=2
+                    console.log(a)
+                    const z=()=>
+                    {
+                        // let a=3
+                        console.log(a)
+                    }
+                    z()
+                }
+                a=999
+                y()
+            }
+            return x
+        }
+        let a=returnfunction()
+        a()
+        </script>
+    </body>
+</html>
